@@ -6,13 +6,13 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 03:03:28 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/16 13:48:13 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/16 14:58:02 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-#include "stdlib.h"
+#include <stdlib.h>
 #include <iostream>
+#include "Zombie.hpp"
 
 #ifndef YELLOW
 # define YELLOW "\033[33m"
