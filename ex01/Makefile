@@ -6,7 +6,12 @@
 #    By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/22 16:34:13 by svogrig           #+#    #+#              #
-#    Updated: 2025/01/22 16:34:14 by svogrig          ###   ########.fr        #
+#    Updated: 2025/02/16 15:50:42 by svogrig          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+SRC		:=	main.cpp \
+			Zombie.cpp \
+			zombieHorde.cpp
+
+include ../ex00/Makefile
