@@ -6,7 +6,7 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 03:03:28 by svogrig           #+#    #+#             */
-/*   Updated: 2025/01/22 04:44:46 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/16 13:48:13 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,12 @@
 #include "stdlib.h"
 #include <iostream>
 
-# define YELLOW "\e[0;33m"
-# define RESET "\e[0m"
+#ifndef YELLOW
+# define YELLOW "\033[33m"
+#endif
+#ifndef RESET
+# define RESET "\033[0m"
+#endif
 
 int main(void)
 {
