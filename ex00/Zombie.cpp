@@ -6,7 +6,7 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 03:03:45 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/16 14:44:19 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/17 11:50:15 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,14 @@ Zombie::~Zombie( void )
 	std::cout << "zombi " << this->_name << " is dead" << std::endl;
 }
 
-void Zombie::setName(const std::string name)
+void Zombie::setName(const std::string newName)
 {
-	_name = name;
+	this->_name = newName;
 }
 
 std::string	Zombie::getName()
 {
-	return (_name);
+	return (this->_name);
 }
 
 void Zombie::announce( void )
