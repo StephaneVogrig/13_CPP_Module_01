@@ -6,7 +6,7 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 15:10:09 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/16 18:50:12 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/18 17:48:09 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ int main(void)
 	std::cout << "value pointed to by 'stringPTR' : " << *stringPTR << std::endl;
 	std::cout << "value pointed to by 'stringREF' : " << stringREF << std::endl;
 
-	return (EXIT_FAILURE);
+	return (EXIT_SUCCESS);
 }

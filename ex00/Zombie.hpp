@@ -6,7 +6,7 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 03:03:48 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/16 15:44:41 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/18 21:13:34 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 #ifndef RESET
 # define RESET "\033[0m"
 #endif
-
 
 class Zombie
 {
