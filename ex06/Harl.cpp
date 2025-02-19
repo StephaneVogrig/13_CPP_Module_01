@@ -6,11 +6,13 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 21:16:57 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/18 22:53:17 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/19 21:19:37 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
+
+const std::string Harl::_level_tab[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 
 Harl::Harl(void)
 {}
@@ -37,21 +39,20 @@ void Harl::error(void)
 	std::cout << "It's an ERROR message" << std::endl;
 }
 
-typedef void (Harl::*t_mbrFuncPtr)(void);
+int Harl::levelToInt(const std::string& level)
+{
+	int i;
+	for (i = 0; i < 4; i++)
+		if (_level_tab[i] == level)
+			break;
+	return (i);
+}
 
-void Harl::complain(std::string level)
+void Harl::complain(const std::string level)
 {
 	t_mbrFuncPtr func[4] = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-	// void (Harl::*func[4])(void) = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-	std::string level_tab[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-	for (int i = 0; i < 4; i++)
-	{
-		if (level_tab[i] == level)
-		{
-			(this->*func[i])();
-			break ;
-		}
-			
-	}
+	int i = levelToInt(level);
+	if (i < 4)
+		(this->*func[i])();
 }
 		

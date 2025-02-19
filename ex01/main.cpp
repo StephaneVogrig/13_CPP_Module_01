@@ -6,13 +6,12 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 14:11:02 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/16 15:04:29 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/19 20:47:28 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "Zombie.hpp"
-
 
 #define NBR_ZOMBIE 10
 

@@ -6,7 +6,7 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 22:15:32 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/18 23:48:28 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/19 21:21:05 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,13 @@
 int main(int argc, char **argv)
 {
 	if (argc != 2)
+	{
 		std::cout << "Error: wrong number of argument" << std::endl;
-	std::string level_tab[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+		return (EXIT_FAILURE);
+	}
 	
 	Harl harl;
-	std::string level(argv[1]);
-	int i = 0;
-	for (i = 0; i < 4; i++)
-		if (level_tab[i] == level)
-			break ;
+	int i = harl.levelToInt(argv[1]);
 	switch (i)
 	{
 		case 0:
