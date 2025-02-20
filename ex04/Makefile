@@ -6,12 +6,11 @@
 #    By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/16 18:52:57 by svogrig           #+#    #+#              #
-#    Updated: 2025/02/17 14:27:27 by svogrig          ###   ########.fr        #
+#    Updated: 2025/02/20 11:58:02 by svogrig          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
-NAME	:=	sed
+NAME	:=	mysed
 
 SRC		:=	main.cpp 
 
