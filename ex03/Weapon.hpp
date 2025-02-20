@@ -6,7 +6,7 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 18:52:32 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/17 01:06:52 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/20 11:43:54 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,14 @@
 # define WEAPON_HPP
 
 # include <string>
+# include <iostream>
+
+#ifndef YELLOW
+# define YELLOW "\033[33m"
+#endif
+#ifndef RESET
+# define RESET "\033[0m"
+#endif
 
 class Weapon
 {

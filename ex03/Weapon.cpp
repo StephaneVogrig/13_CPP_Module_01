@@ -6,17 +6,21 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 18:54:59 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/17 01:06:34 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/20 11:46:39 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Weapon.hpp"
 
 Weapon::Weapon(std::string type) : _type(type)
-{}
+{
+	std::cout << YELLOW "A weapon '" << _type << "' is created" RESET << std::endl;
+}
 
 Weapon::~Weapon()
-{}
+{
+	std::cout << YELLOW "A weapon '" << _type << "' is destroy" RESET << std::endl;
+}
 
 const std::string& Weapon::getType(void)
 {

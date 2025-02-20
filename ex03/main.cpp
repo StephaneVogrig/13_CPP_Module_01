@@ -6,7 +6,7 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 18:55:11 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/17 01:07:54 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/20 11:37:44 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,10 @@ int main(void)
 		club.setType("some other type of club");
 		jim.attack();
 	}
+	HumanB noweapon("noweapon");
+	noweapon.attack();
+	Weapon club = Weapon("gun");
+	noweapon.setWeapon(club);
+	noweapon.attack();
 	return (EXIT_SUCCESS);
 }
