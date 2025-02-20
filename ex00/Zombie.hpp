@@ -6,7 +6,7 @@
 /*   By: svogrig <svogrig@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 03:03:48 by svogrig           #+#    #+#             */
-/*   Updated: 2025/02/18 21:13:34 by svogrig          ###   ########.fr       */
+/*   Updated: 2025/02/20 11:14:29 by svogrig          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ class Zombie
 		std::string	_name;
 };
 
-Zombie* newZombie(const std::string name);
-void	randomChump(const std::string name);
+Zombie* newZombie(std::string name);
+void	randomChump(std::string name);
 
 #endif
